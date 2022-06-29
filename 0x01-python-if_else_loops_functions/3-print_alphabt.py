@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for a in range(ord('a'), ord('z') + 1):
-    if chr(a) != 'e' and chr(a) != 'q':
-        print("{:c}".format(a), end='')
+for alpha in range(97, 123):
+    if alpha == 101 or alpha == 113:
+        continue
+    print('{:c}'.format(alpha), end="")
